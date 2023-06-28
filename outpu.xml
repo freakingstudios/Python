@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<questions>
+	<questions>
+		<text>What is Java? Explain its features and advantages</text>
+		<answer>Java is a high-level, object-oriented programming language developed by Sun Microsystems (now owned by Oracle). It is platform-independent and designed to have a simple and secure execution environment. Some key features of Java include automatic memory management (garbage collection), platform independence through the Java Virtual Machine (JVM), support for multithreading, and a vast standard library. Its advantages include portability, scalability, robustness, and widespread community support.</answer>
+	</questions>
+	<questions>
+		<text>What is the difference between JDK, JRE, and JVM?</text>
+		<answer>JDK (Java Development Kit): It is a software development kit that provides the tools necessary to develop, debug, and compile Java applications. It includes the JRE, Java compiler, debugger, and other development utilities.
+JRE (Java Runtime Environment): It is a runtime environment that provides the necessary libraries, Java Virtual Machine (JVM), and other components to run Java applications. It does not include development tools.
+JVM (Java Virtual Machine): It is a virtual machine that executes Java bytecode. It provides an abstraction layer between the Java application and the underlying hardware and operating system. JVM is responsible for memory management, garbage collection, and bytecode interpretation.</answer>
+	</questions>
+	<questions>
+		<text>What are the main principles of object-oriented programming (OOP)?</text>
+		<answer>The main principles of OOP are:
+
+Encapsulation: It is the process of bundling data and methods into a single unit (object) and hiding the internal details from the outside world.
+Inheritance: It allows the creation of new classes (derived classes) based on existing classes (base or parent classes), inheriting their attributes and behaviors.
+Polymorphism: It refers to the ability of an object to take on multiple forms. It allows methods to be overridden in subclasses and objects of different classes to be treated as objects of a common superclass.
+Abstraction: It is the process of simplifying complex systems by breaking them down into smaller, more manageable units. It involves creating abstract classes and interfaces to define common behaviors and attributes.
+Association: It represents a relationship between two or more objects. It can be one-to-one, one-to-many, or many-to-many.
+Composition: It is a special form of association where one class is composed of other classes. The composed classes cannot exist independently of the main class.
+Aggregation: It is another form of association where one class is composed of other classes, but the composed classes can exist independently.</answer>
+	</questions>
+	<questions>
+		<text>What is the difference between ArrayList and LinkedList?</text>
+		<answer>ArrayList is implemented as a resizable array and provides fast access to elements, while LinkedList is implemented as a doubly-linked list and provides efficient insertion and deletion operations.</answer>
+	</questions>
+</questions>

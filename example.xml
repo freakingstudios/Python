@@ -1,0 +1,842 @@
+<?xml version="1.0" ?>
+<root>
+    <question id="Q1">
+        guage?
+        <answer>A Java virtual machine (JVM) is a process virtual machine that can execute Java bytecode. Each Java source ﬁle is compiled</answer>
+        <answer>into a bytecode ﬁle, which is executed by the JVM. Java was designed to allow application programs to be built that could be</answer>
+        <answer>run on any platform, without having to be rewritten or recompiled by the programmer for each separate platform. A Java virtual</answer>
+        <answer>machine makes this possible, because it is aware of the speciﬁc instruction lengths and other particularities of the underlying</answer>
+        <answer>hardware platform.</answer>
+    </question>
+    <question id="Q2">
+        2.2 What is the Difference between JDK and JRE ?
+        <answer>The Java Runtime Environment (JRE) is basically the Java Virtual Machine (JVM) where your Java programs are being executed.</answer>
+        <answer>It also includes browser plugins for applet execution. The Java Development Kit (JDK) is the full featured Software Development</answer>
+        <answer>Kit for Java, including the JRE, the compilers and tools (like JavaDoc, and Java Debugger), in order for a user to develop, compile</answer>
+        <answer>and execute Java applications.</answer>
+        <answer>2.3 What does the “static” keyword mean ? Can you override private or static</answer>
+    </question>
+    <question id="Q3">
+        method in Java ?
+        <answer>The static keyword denotes that a member variable or method can be accessed, without requiring an instantiation of the class to</answer>
+        <answer>which it belongs. A user cannot override static methods in Java, because method overriding is based upon dynamic binding at</answer>
+        <answer>runtime and static methods are statically binded at compile time. A static method is not associated with any instance of a class</answer>
+        <answer>so the concept is not applicable.</answer>
+    </question>
+    <question id="Q4">
+        2.4 Can you access non static variable in static context ?
+        <answer>A static variable in Java belongs to its class and its value remains the same for all its instances. A static variable is initialized</answer>
+        <answer>when the class is loaded by the JVM. If your code tries to access a non-static variable, without any instance, the compiler will</answer>
+        <answer>complain, because those variables are not created yet and they are not associated with any instance.</answer>
+        <answer>Java Interview Questions 4 / 30</answer>
+        <answer>2.5 What are the Data Types supported by Java ? What is Autoboxing and Unbox-</answer>
+    </question>
+    <question id="Q5">
+        ing ?
+        <answer>The eight primitive data types supported by the Java programming language are:</answer>
+        <answer>• byte</answer>
+        <answer>• short</answer>
+        <answer>• int</answer>
+        <answer>• long</answer>
+        <answer>• ﬂoat</answer>
+        <answer>• double</answer>
+        <answer>• boolean</answer>
+        <answer>• char</answer>
+        <answer>Autoboxing is the automatic conversion made by the Java compiler between the primitive types and their corresponding object</answer>
+        <answer>wrapper classes. For example, the compiler converts an int to an Integer, a double to a Double, and so on. If the conversion goes</answer>
+        <answer>the other way, this operation is called unboxing .</answer>
+    </question>
+    <question id="Q6">
+        2.6 What is Function Overriding and Overloading in Java ?
+        <answer>Method overloading in Java occurs when two or more methods in the same class have the exact same name, but different</answer>
+        <answer>parameters. On the other hand, method overriding is deﬁned as the case when a child class redeﬁnes the same method as a parent</answer>
+        <answer>class. Overridden methods must have the same name, argument list, and return type. The overriding method may not limit the</answer>
+        <answer>access of the method it overrides.</answer>
+        <answer>2.7 What is a Constructor, Constructor Overloading in Java and Copy-Constructor</answer>
+        <answer>A constructor gets invoked when a new object is created. Every class has a constructor. In case the programmer does not provide</answer>
+        <answer>a constructor for a class, the Java compiler (Javac) creates a default constructor for that class. The constructor overloading is</answer>
+        <answer>similar to method overloading in Java. Different constructors can be created for a single class. Each constructor must have its</answer>
+        <answer>own unique parameter list. Finally, Java does support copy constructors like C++, but the difference lies in the fact that Java</answer>
+        <answer>doesn’t create a default copy constructor if you don’t write your own.</answer>
+    </question>
+    <question id="Q7">
+        2.8 Does Java support multiple inheritance ?
+        <answer>No, Java does not support multiple inheritance. Each class is able to extend only on one class, but is able to implement more than</answer>
+        <answer>one interfaces.</answer>
+    </question>
+    <question id="Q8">
+        2.9 What is the difference between an Interface and an Abstract class ?
+        <answer>Java provides and supports the creation both of abstract classes and interfaces. Both implementations share some common</answer>
+        <answer>characteristics, but they differ in the following features:</answer>
+        <answer>• All methods in an interface are implicitly abstract. On the other hand, an abstract class may contain both abstract and non-</answer>
+        <answer>abstract methods.</answer>
+        <answer>Java Interview Questions 5 / 30</answer>
+        <answer>• A class may implement a number of Interfaces, but can extend only one abstract class.</answer>
+        <answer>• In order for a class to implement an interface, it must implement all its declared methods. However, a class may not implement</answer>
+        <answer>all declared methods of an abstract class. Though, in this case, the sub-class must also be declared as abstract.</answer>
+        <answer>• Abstract classes can implement interfaces without even providing the implementation of interface methods.</answer>
+        <answer>• Variables declared in a Java interface is by default ﬁnal. An abstract class may contain non-ﬁnal variables.</answer>
+        <answer>• Members of a Java interface are public by default. A member of an abstract class can either be private, protected or public.</answer>
+        <answer>• An interface is absolutely abstract and cannot be instantiated. An abstract class also cannot be instantiated, but can be invoked</answer>
+        <answer>if it contains a main method.</answer>
+        <answer>Also check out the Abstract class and Interface differences for JDK 8.</answer>
+    </question>
+    <question id="Q9">
+        2.10 What are pass by reference and pass by value ?
+        <answer>When an object is passed by value, this means that a copy of the object is passed. Thus, even if changes are made to that object,</answer>
+        <answer>it doesn’t affect the original value. When an object is passed by reference, this means that the actual object is not passed, rather</answer>
+        <answer>a reference of the object is passed. Thus, any changes made by the external method, are also reﬂected in all places.</answer>
+        <answer>Java Interview Questions 6 / 30</answer>
+        <answer>Chapter 3</answer>
+        <answer>Java Threads</answer>
+    </question>
+    <question id="Q10">
+        3.1 What is the difference between processes and threads ?
+        <answer>A process is an execution of a program, while a Thread is a single execution sequence within a process. A process can contain</answer>
+        <answer>multiple threads. A Thread is sometimes called a lightweight process.</answer>
+        <answer>3.2 Explain different ways of creating a thread. Which one would you prefer and</answer>
+    </question>
+    <question id="Q11">
+        why ?
+        <answer>There are three ways that can be used in order for a Thread to be created:</answer>
+        <answer>• A class may extend the Thread class.</answer>
+        <answer>• A class may implement the Runnable interface.</answer>
+        <answer>• An application can use the Executor framework, in order to create a thread pool.</answer>
+        <answer>The Runnable interface is preferred, as it does not require an object to inherit the Thread class. In case your application design</answer>
+        <answer>requires multiple inheritance, only interfaces can help you. Also, the thread pool is very efﬁcient and can be implemented and</answer>
+        <answer>used very easily.</answer>
+        <answer>3.3 Explain the available thread states in a high-level.</answer>
+        <answer>During its execution, a thread can reside in one of the following states:</answer>
+        <answer>•Runnable : A thread becomes ready to run, but does not necessarily start running immediately.</answer>
+        <answer>•Running : The processor is actively executing the thread code.</answer>
+        <answer>•Waiting : A thread is in a blocked state waiting for some external processing to ﬁnish.</answer>
+        <answer>•Sleeping : The thread is forced to sleep.</answer>
+        <answer>•Blocked on I/O : Waiting for an I/O operation to complete.</answer>
+        <answer>•Blocked on Synchronization : Waiting to acquire a lock.</answer>
+        <answer>•Dead : The thread has ﬁnished its execution.</answer>
+        <answer>Java Interview Questions 7 / 30</answer>
+        <answer>3.4 What is the difference between a synchronized method and a synchronized</answer>
+    </question>
+    <question id="Q12">
+        block ?
+        <answer>In Java programming, each object has a lock. A thread can acquire the lock for an object by using the synchronized keyword.</answer>
+        <answer>The synchronized keyword can be applied in a method level (coarse grained lock) or block level of code (ﬁne grained lock).</answer>
+        <answer>3.5 How does thread synchronization occurs inside a monitor ? What levels of</answer>
+    </question>
+    <question id="Q13">
+        synchronization can you apply ?
+        <answer>The JVM uses locks in conjunction with monitors. A monitor is basically a guardian that watches over a sequence of synchronized</answer>
+        <answer>code and ensuring that only one thread at a time executes a synchronized piece of code. Each monitor is associated with an object</answer>
+        <answer>reference. The thread is not allowed to execute the code until it obtains the lock.</answer>
+    </question>
+    <question id="Q14">
+        3.6 What’s a deadlock ?
+        <answer>A condition that occurs when two processes are waiting for each other to complete, before proceeding. The result is that both</answer>
+        <answer>processes wait endlessly.</answer>
+    </question>
+    <question id="Q15">
+        3.7 How do you ensure that N threads can access N resources without deadlock ?
+        <answer>A very simple way to avoid deadlock while using N threads is to impose an ordering on the locks and force each thread to follow</answer>
+        <answer>that ordering. Thus, if all threads lock and unlock the mutexes in the same order, no deadlocks can arise.</answer>
+        <answer>Java Interview Questions 8 / 30</answer>
+        <answer>Chapter 4</answer>
+        <answer>Java Collections</answer>
+    </question>
+    <question id="Q16">
+        4.1 What are the basic interfaces of Java Collections Framework ?
+        <answer>Java Collections Framework provides a well designed set of interfaces and classes that support operations on a collections of</answer>
+        <answer>objects. The most basic interfaces that reside in the Java Collections Framework are:</answer>
+        <answer>• Collection, which represents a group of objects known as its elements.</answer>
+        <answer>• Set, which is a collection that cannot contain duplicate elements.</answer>
+        <answer>• List, which is an ordered collection and can contain duplicate elements.</answer>
+        <answer>• Map, which is an object that maps keys to values and cannot contain duplicate keys.</answer>
+    </question>
+    <question id="Q17">
+        4.2 Why Collection doesn’t extend Cloneable and Serializable interfaces ?
+        <answer>The Collection interface speciﬁes groups of objects known as elements. Each concrete implementation of a Collection can choose</answer>
+        <answer>its own way of how to maintain and order its elements. Some collections allow duplicate keys, while some other collections don’t.</answer>
+        <answer>The semantics and the implications of either cloning or serialization come into play when dealing with actual implementations.</answer>
+        <answer>Thus, the concrete implementations of collections should decide how they can be cloned or serialized.</answer>
+    </question>
+    <question id="Q18">
+        4.3 What is an Iterator ?
+        <answer>The Iterator interface provides a number of methods that are able to iterate over any Collection. Each Java Collection contains</answer>
+        <answer>the iterator method that returns an Iterator instance. Iterators are capable of removing elements from the underlying collection</answer>
+        <answer>during the iteration.</answer>
+    </question>
+    <question id="Q19">
+        4.4 What differences exist between Iterator and ListIterator ?
+        <answer>The differences of these elements are listed below:</answer>
+        <answer>• An Iterator can be used to traverse the Set and List collections, while the ListIterator can be used to iterate only over Lists.</answer>
+        <answer>• The Iterator can traverse a collection only in forward direction, while the ListIterator can traverse a List in both directions.</answer>
+        <answer>• The ListIterator implements the Iterator interface and contains extra functionality, such as adding an element, replacing an</answer>
+        <answer>element, getting the index position for previous and next elements, etc.</answer>
+        <answer>Java Interview Questions 9 / 30</answer>
+    </question>
+    <question id="Q20">
+        4.5 What is difference between fail-fast and fail-safe ?
+        <answer>The Iterator’s fail-safe property works with the clone of the underlying collection and thus, it is not affected by any modiﬁcation</answer>
+        <answer>in the collection. All the collection classes in java.util package are fail-fast, while the collection classes in java.util.concurrent</answer>
+        <answer>are fail-safe. Fail-fast iterators throw a ConcurrentModificationException , while fail-safe iterator never throws such</answer>
+        <answer>an exception.</answer>
+    </question>
+    <question id="Q21">
+        4.6 How HashMap works in Java ?
+        <answer>A HashMap in Java stores key-value pairs. The HashMap requires a hash function and uses hashCode and equals methods,</answer>
+        <answer>in order to put and retrieve elements to and from the collection respectively. When the put method is invoked, the HashMap</answer>
+        <answer>calculates the hash value of the key and stores the pair in the appropriate index inside the collection. If the key exists, its value</answer>
+        <answer>is updated with the new value. Some important characteristics of a HashMap are its capacity, its load factor and the threshold</answer>
+        <answer>resizing.</answer>
+    </question>
+    <question id="Q22">
+        4.7 What is the importance of hashCode() and equals() methods ?
+        <answer>In Java, a HashMap uses the hashCode and equals methods to determine the index of the key-value pair and to detect duplicates.</answer>
+        <answer>More speciﬁcally, the hashCode method is used in order to determine where the speciﬁed key will be stored. Since different keys</answer>
+        <answer>may produce the same hash value, the equals method is used, in order to determine whether the speciﬁed key actually exists in</answer>
+        <answer>the collection or not. Therefore, the implementation of both methods is crucial to the accuracy and efﬁciency of the HashMap.</answer>
+    </question>
+    <question id="Q23">
+        4.8 What differences exist between HashMap and Hashtable ?
+        <answer>Both the HashMap and Hashtable classes implement the Map interface and thus, have very similar characteristics. However, they</answer>
+        <answer>differ in the following features:</answer>
+        <answer>• A HashMap allows the existence of null keys and values, while a Hashtable doesn’t allow neither null keys, nor null values.</answer>
+        <answer>• A Hashtable is synchronized, while a HashMap is not. Thus, HashMap is preferred in single-threaded environments, while a</answer>
+        <answer>Hashtable is suitable for multi-threaded environments.</answer>
+        <answer>• A HashMap provides its set of keys and a Java application can iterate over them. Thus, a HashMap is fail-fast. On the other</answer>
+        <answer>hand, a Hashtable provides an Enumeration of its keys.</answer>
+        <answer>• The Hashtable class is considered to be a legacy class.</answer>
+        <answer>4.9 What is difference between Array and ArrayList ? When will you use Array over</answer>
+    </question>
+    <question id="Q24">
+        ArrayList ?
+        <answer>The Array and ArrayList classes differ on the following features:</answer>
+        <answer>• Arrays can contain primitive or objects, while an ArrayList can contain only objects.</answer>
+        <answer>• Arrays have ﬁxed size, while an ArrayList is dynamic.</answer>
+        <answer>• An ArrayList provides more methods and features, such as addAll, removeAll, iterator, etc.</answer>
+        <answer>• For a list of primitive data types, the collections use autoboxing to reduce the coding effort. However, this approach makes</answer>
+        <answer>them slower when working on ﬁxed size primitive data types.</answer>
+        <answer>Java Interview Questions 10 / 30</answer>
+    </question>
+    <question id="Q25">
+        4.10 What is difference between ArrayList and LinkedList ?
+        <answer>Both the ArrayList and LinkedList classes implement the List interface, but they differ on the following features:</answer>
+        <answer>• An ArrayList is an index based data structure backed by an Array. It provides random access to its elements with a performance</answer>
+        <answer>equal to O(1). On the other hand, a LinkedList stores its data as list of elements and every element is linked to its previous and</answer>
+        <answer>next element. In this case, the search operation for an element has execution time equal to O(n).</answer>
+        <answer>• The Insertion, addition and removal operations of an element are faster in a LinkedList compared to an ArrayList, because</answer>
+        <answer>there is no need of resizing an array or updating the index when an element is added in some arbitrary position inside the</answer>
+        <answer>collection.</answer>
+        <answer>• A LinkedList consumes more memory than an ArrayList, because every node in a LinkedList stores two references, one for its</answer>
+        <answer>previous element and one for its next element.</answer>
+        <answer>Check also our article ArrayList vs. LinkedList.</answer>
+        <answer>4.11 What is Comparable and Comparator interface ? List their differences.</answer>
+        <answer>Java provides the Comparable interface, which contains only one method, called compareTo. This method compares two objects,</answer>
+        <answer>in order to impose an order between them. Speciﬁcally, it returns a negative integer, zero, or a positive integer to indicate that the</answer>
+        <answer>input object is less than, equal or greater than the existing object. Java provides the Comparator interface, which contains two</answer>
+        <answer>methods, called compare and equals. The ﬁrst method compares its two input arguments and imposes an order between them.</answer>
+        <answer>It returns a negative integer, zero, or a positive integer to indicate that the ﬁrst argument is less than, equal to, or greater than</answer>
+        <answer>the second. The second method requires an object as a parameter and aims to decide whether the input object is equal to the</answer>
+        <answer>comparator. The method returns true, only if the speciﬁed object is also a comparator and it imposes the same ordering as the</answer>
+        <answer>comparator.</answer>
+    </question>
+    <question id="Q26">
+        4.12 What is Java Priority Queue ?
+        <answer>The PriorityQueue is an unbounded queue, based on a priority heap and its elements are ordered in their natural order. At the time</answer>
+        <answer>of its creation, we can provide a Comparator that is responsible for ordering the elements of the PriorityQueue. A PriorityQueue</answer>
+        <answer>doesn’t allow null values, those objects that doesn’t provide natural ordering, or those objects that don’t have any comparator</answer>
+        <answer>associated with them. Finally, the Java PriorityQueue is not thread-safe and it requires O(log(n)) time for its enqueing and</answer>
+        <answer>dequeing operations.</answer>
+        <answer>4.13 What do you know about the big-O notation and can you give some examples</answer>
+    </question>
+    <question id="Q27">
+        with respect to different data structures ?
+        <answer>The Big-O notation simply describes how well an algorithm scales or performs in the worst case scenario as the number of ele-</answer>
+        <answer>ments in a data structure increases. The Big-O notation can also be used to describe other behavior such as memory consumption.</answer>
+        <answer>Since the collection classes are actually data structures, we usually use the Big-O notation to chose the best implementation to</answer>
+        <answer>use, based on time, memory and performance. Big-O notation can give a good indication about performance for large amounts</answer>
+        <answer>of data.</answer>
+        <answer>4.14 What is the tradeoff between using an unordered array versus an ordered</answer>
+    </question>
+    <question id="Q28">
+        array ?
+        <answer>The major advantage of an ordered array is that the search times have time complexity of O(log n), compared to that of an</answer>
+        <answer>unordered array, which is O (n). The disadvantage of an ordered array is that the insertion operation has a time complexity of</answer>
+        <answer>O(n), because the elements with higher values must be moved to make room for the new element. Instead, the insertion operation</answer>
+        <answer>for an unordered array takes constant time of O(1).</answer>
+        <answer>Java Interview Questions 11 / 30</answer>
+        <answer>4.15 What are some of the best practices relating to the Java Collection framework</answer>
+    </question>
+    <question id="Q29">
+        ?
+        <answer>• Choosing the right type of the collection to use, based on the application’s needs, is very crucial for its performance. For</answer>
+        <answer>example if the size of the elements is ﬁxed and know a priori, we shall use an Array, instead of an ArrayList.</answer>
+        <answer>• Some collection classes allow us to specify their initial capacity. Thus, if we have an estimation on the number of elements</answer>
+        <answer>that will be stored, we can use it to avoid rehashing or resizing.</answer>
+        <answer>• Always use Generics for type-safety, readability, and robustness. Also, by using Generics you avoid the ClassCastException</answer>
+        <answer>during runtime.</answer>
+        <answer>• Use immutable classes provided by the Java Development Kit (JDK) as a key in a Map, in order to avoid the implementation</answer>
+        <answer>of the hashCode and equals methods for our custom class.</answer>
+        <answer>• Program in terms of interface not implementation.</answer>
+        <answer>• Return zero-length collections or arrays as opposed to returning a null in case the underlying collection is actually empty.</answer>
+    </question>
+    <question id="Q30">
+        4.16 What’s the difference between Enumeration and Iterator interfaces ?
+        <answer>Enumeration is twice as fast as compared to an Iterator and uses very less memory. However, the Iterator is much safer compared</answer>
+        <answer>to Enumeration, because other threads are not able to modify the collection object that is currently traversed by the iterator. Also,</answer>
+        <answer>Iteratorsallow the caller to remove elements from the underlying collection, something which is not possible with Enumerations.</answer>
+    </question>
+    <question id="Q31">
+        4.17 What is the difference between HashSet and TreeSet ?
+        <answer>The HashSet is Implemented using a hash table and thus, its elements are not ordered. The add, remove, and contains methods of</answer>
+        <answer>a HashSet have constant time complexity O(1). On the other hand, a TreeSet is implemented using a tree structure. The elements</answer>
+        <answer>in a TreeSet are sorted, and thus, the add, remove, and contains methods have time complexity of O(logn).</answer>
+        <answer>Java Interview Questions 12 / 30</answer>
+        <answer>Chapter 5</answer>
+        <answer>Garbage Collectors</answer>
+    </question>
+    <question id="Q32">
+        5.1 What is the purpose of garbage collection in Java, and when is it used ?
+        <answer>The purpose of garbage collection is to identify and discard those objects that are no longer needed by the application, in order</answer>
+        <answer>for the resources to be reclaimed and reused.</answer>
+    </question>
+    <question id="Q33">
+        5.2 What does System.gc() and Runtime.gc() methods do ?
+        <answer>These methods can be used as a hint to the JVM, in order to start a garbage collection. However, this it is up to the Java Virtual</answer>
+        <answer>Machine (JVM) to start the garbage collection immediately or later in time.</answer>
+    </question>
+    <question id="Q34">
+        5.3 When is the ﬁnalize() called ? What is the purpose of ﬁnalization ?
+        <answer>The ﬁnalize method is called by the garbage collector, just before releasing the object’s memory. It is normally advised to release</answer>
+        <answer>resources held by the object inside the ﬁnalize method.</answer>
+        <answer>5.4 If an object reference is set to null, will the Garbage Collector immediately free</answer>
+    </question>
+    <question id="Q35">
+        the memory held by that object ?
+        <answer>No, the object will be available for garbage collection in the next cycle of the garbage collector.</answer>
+    </question>
+    <question id="Q36">
+        5.5 What is structure of Java Heap ? What is Perm Gen space in Heap ?
+        <answer>The JVM has a heap that is the runtime data area from which memory for all class instances and arrays is allocated. It is created</answer>
+        <answer>at the JVM start-up. Heap memory for objects is reclaimed by an automatic memory management system which is known as a</answer>
+        <answer>garbage collector. Heap memory consists of live and dead objects. Live objects are accessible by the application and will not</answer>
+        <answer>be a subject of garbage collection. Dead objects are those which will never be accessible by the application, but have not been</answer>
+        <answer>collected by the garbage collector yet. Such objects occupy the heap memory space until they are eventually collected by the</answer>
+        <answer>garbage collector.</answer>
+        <answer>Java Interview Questions 13 / 30</answer>
+    </question>
+    <question id="Q37">
+        5.6 What is the difference between Serial and Throughput Garbage collector ?
+        <answer>The throughput garbage collector uses a parallel version of the young generation collector and is meant to be used with applica-</answer>
+        <answer>tions that have medium to large data sets. On the other hand, the serial collector is usually adequate for most small applications</answer>
+        <answer>(those requiring heaps of up to approximately 100MB on modern processors).</answer>
+    </question>
+    <question id="Q38">
+        5.7 When does an Object becomes eligible for Garbage collection in Java ?
+        <answer>A Java object is subject to garbage collection when it becomes unreachable to the program in which it is currently used.</answer>
+    </question>
+    <question id="Q39">
+        5.8 Does Garbage collection occur in permanent generation space in JVM ?
+        <answer>Garbage Collection does occur in PermGen space and if PermGen space is full or cross a threshold, it can trigger a full garbage</answer>
+        <answer>collection. If you look carefully at the output of the garbage collector, you will ﬁnd that PermGen space is also garbage collected.</answer>
+        <answer>This is the reason why correct sizing of PermGen space is important to avoid frequent full garbage collections. Also check our</answer>
+        <answer>article Java 8: PermGen to Metaspace.</answer>
+        <answer>Java Interview Questions 14 / 30</answer>
+        <answer>Chapter 6</answer>
+        <answer>Exception Handling</answer>
+        <answer>6.1 What are the two types of Exceptions in Java ? Which are the differences</answer>
+    </question>
+    <question id="Q40">
+        between them ?
+        <answer>Java has two types of exceptions: checked exceptions and unchecked exceptions. Unchecked exceptions do not need to be</answer>
+        <answer>declared in a method or a constructor’s throws clause, if they can be thrown by the execution of the method or the constructor,</answer>
+        <answer>and propagate outside the method or constructor boundary. On the other hand, checked exceptions must be declared in a method</answer>
+        <answer>or a constructor’s throws clause. See here for tips on Java exception handling.</answer>
+    </question>
+    <question id="Q41">
+        6.2 What is the difference between Exception and Error in java ?
+        <answer>Exception and Error classes are both subclasses of the Throwable class. The Exception class is used for exceptional conditions</answer>
+        <answer>that a user’s program should catch. The Error class deﬁnes exceptions that are not excepted to be caught by the user program.</answer>
+    </question>
+    <question id="Q42">
+        6.3 What is the difference between throw and throws ?
+        <answer>The throw keyword is used to explicitly raise a exception within the program. On the contrary, the throws clause is used to</answer>
+        <answer>indicate those exceptions that are not handled by a method. Each method must explicitly specify which exceptions does not</answer>
+        <answer>handle, so the callers of that method can guard against possible exceptions. Finally, multiple exceptions are separated by a</answer>
+        <answer>comma.</answer>
+    </question>
+    <question id="Q43">
+        6.4 What is the importance of ﬁnally block in exception handling ?
+        <answer>A ﬁnally block will always be executed, whether or not an exception is actually thrown. Even in the case where the catch</answer>
+        <answer>statement is missing and an exception is thrown, the ﬁnally block will still be executed. Last thing to mention is that the ﬁnally</answer>
+        <answer>block is used to release resources like I/O buffers, database connections, etc.</answer>
+    </question>
+    <question id="Q44">
+        6.5 What will happen to the Exception object after exception handling ?
+        <answer>The Exception object will be garbage collected in the next garbage collection.</answer>
+        <answer>Java Interview Questions 15 / 30</answer>
+    </question>
+    <question id="Q45">
+        6.6 How does ﬁnally block differ from ﬁnalize() method ?
+        <answer>A ﬁnally block will be executed whether or not an exception is thrown and is used to release those resources held by the</answer>
+        <answer>application. Finalize is a protected method of the Object class, which is called by the Java Virtual Machine (JVM) just before an</answer>
+        <answer>object is garbage collected.</answer>
+        <answer>Java Interview Questions 16 / 30</answer>
+        <answer>Chapter 7</answer>
+        <answer>Java Applets</answer>
+    </question>
+    <question id="Q46">
+        7.1 What is an Applet ?
+        <answer>A java applet is program that can be included in a HTML page and be executed in a java enabled client browser. Applets are used</answer>
+        <answer>for creating dynamic and interactive web applications.</answer>
+        <answer>7.2 Explain the life cycle of an Applet.</answer>
+        <answer>An applet may undergo the following states:</answer>
+        <answer>•Init: An applet is initialized each time is loaded.</answer>
+        <answer>•Start : Begin the execution of an applet.</answer>
+        <answer>•Stop : Stop the execution of an applet.</answer>
+        <answer>•Destroy : Perform a ﬁnal cleanup, before unloading the applet.</answer>
+    </question>
+    <question id="Q47">
+        7.3 What happens when an applet is loaded ?
+        <answer>First of all, an instance of the applet’s controlling class is created. Then, the applet initializes itself and ﬁnally, it starts running.</answer>
+    </question>
+    <question id="Q48">
+        7.4 What is the difference between an Applet and a Java Application ?
+        <answer>Applets are executed within a java enabled browser, but a Java application is a standalone Java program that can be executed</answer>
+        <answer>outside of a browser. However, they both require the existence of a Java Virtual Machine (JVM). Furthermore, a Java application</answer>
+        <answer>requires a main method with a speciﬁc signature, in order to start its execution. Java applets don’t need such a method to start</answer>
+        <answer>their execution. Finally, Java applets typically use a restrictive security policy, while Java applications usually use more relaxed</answer>
+        <answer>security policies.</answer>
+    </question>
+    <question id="Q49">
+        7.5 What are the restrictions imposed on Java applets ?
+        <answer>Mostly due to security reasons, the following restrictions are imposed on Java applets:</answer>
+        <answer>• An applet cannot load libraries or deﬁne native methods.</answer>
+        <answer>Java Interview Questions 17 / 30</answer>
+        <answer>• An applet cannot ordinarily read or write ﬁles on the execution host.</answer>
+        <answer>• An applet cannot read certain system properties.</answer>
+        <answer>• An applet cannot make network connections except to the host that it came from.</answer>
+        <answer>• An applet cannot start any program on the host that’s executing it.</answer>
+    </question>
+    <question id="Q50">
+        7.6 What are untrusted applets ?
+        <answer>Untrusted applets are those Java applets that cannot access or execute local system ﬁles. By default, all downloaded applets are</answer>
+        <answer>considered as untrusted.</answer>
+        <answer>7.7 What is the difference between applets loaded over the internet and applets</answer>
+    </question>
+    <question id="Q51">
+        loaded via the ﬁle system ?
+        <answer>Regarding the case where an applet is loaded over the internet, the applet is loaded by the applet classloader and is subject to the</answer>
+        <answer>restrictions enforced by the applet security manager. Regarding the case where an applet is loaded from the client’s local disk,</answer>
+        <answer>the applet is loaded by the ﬁle system loader. Applets loaded via the ﬁle system are allowed to read ﬁles, write ﬁles and to load</answer>
+        <answer>libraries on the client. Also, applets loaded via the ﬁle system are allowed to execute processes and ﬁnally, applets loaded via the</answer>
+        <answer>ﬁle system are not passed through the byte code veriﬁer.</answer>
+    </question>
+    <question id="Q52">
+        7.8 What is the applet class loader, and what does it provide ?
+        <answer>When an applet is loaded over the internet, the applet is loaded by the applet classloader. The class loader enforces the Java name</answer>
+        <answer>space hierarchy. Also, the class loader guarantees that a unique namespace exists for classes that come from the local ﬁle system,</answer>
+        <answer>and that a unique namespace exists for each network source. When a browser loads an applet over the net, that applet’s classes</answer>
+        <answer>are placed in a private namespace associated with the applet’s origin. Then, those classes loaded by the class loader are passed</answer>
+        <answer>through the veriﬁer.The veriﬁer checks that the class ﬁle conforms to the Java language speciﬁcation . Among other things, the</answer>
+        <answer>veriﬁer ensures that there are no stack overﬂows or underﬂows and that the parameters to all bytecode instructions are correct.</answer>
+    </question>
+    <question id="Q53">
+        7.9 What is the applet security manager, and what does it provide ?
+        <answer>The applet security manager is a mechanism to impose restrictions on Java applets. A browser may only have one security</answer>
+        <answer>manager. The security manager is established at startup, and it cannot thereafter be replaced, overloaded, overridden, or extended.</answer>
+        <answer>Java Interview Questions 18 / 30</answer>
+        <answer>Chapter 8</answer>
+        <answer>Swing</answer>
+    </question>
+    <question id="Q54">
+        8.1 What is the difference between a Choice and a List ?
+        <answer>A Choice is displayed in a compact form that must be pulled down, in order for a user to be able to see the list of all available</answer>
+        <answer>choices. Only one item may be selected from a Choice. A List may be displayed in such a way that several List items are visible.</answer>
+        <answer>A List supports the selection of one or more List items.</answer>
+    </question>
+    <question id="Q55">
+        8.2 What is a layout manager ?
+        <answer>A layout manager is the used to organize the components in a container.</answer>
+    </question>
+    <question id="Q56">
+        8.3 What is the difference between a Scrollbar and a JScrollPane ?
+        <answer>A Scrollbar is a Component, but not a Container. A ScrollPane is a Container. A ScrollPane handles its own events and performs</answer>
+        <answer>its own scrolling.</answer>
+    </question>
+    <question id="Q57">
+        8.4 Which Swing methods are thread-safe ?
+        <answer>There are only three thread-safe methods: repaint, revalidate, and invalidate.</answer>
+        <answer>8.5 Name three Component subclasses that support painting.</answer>
+        <answer>The Canvas, Frame, Panel, and Applet classes support painting.</answer>
+    </question>
+    <question id="Q58">
+        8.6 What is clipping ?
+        <answer>Clipping is deﬁned as the process of conﬁning paint operations to a limited area or shape.</answer>
+    </question>
+    <question id="Q59">
+        8.7 What is the difference between a MenuItem and a CheckboxMenuItem ?
+        <answer>The CheckboxMenuItem class extends the MenuItem class and supports a menu item that may be either checked or unchecked.</answer>
+        <answer>Java Interview Questions 19 / 30</answer>
+    </question>
+    <question id="Q60">
+        8.8 How are the elements of a BorderLayout organized ?
+        <answer>The elements of a BorderLayout are organized at the borders (North, South, East, and West) and the center of a container.</answer>
+    </question>
+    <question id="Q61">
+        8.9 How are the elements of a GridBagLayout organized ?
+        <answer>The elements of a GridBagLayout are organized according to a grid. The elements are of different sizes and may occupy more</answer>
+        <answer>than one row or column of the grid. Thus, the rows and columns may have different sizes.</answer>
+    </question>
+    <question id="Q62">
+        8.10 What is the difference between a Window and a Frame ?
+        <answer>The Frame class extends the Window class and deﬁnes a main application window that can have a menu bar.</answer>
+    </question>
+    <question id="Q63">
+        8.11 What is the relationship between clipping and repainting ?
+        <answer>When a window is repainted by the AWT painting thread, it sets the clipping regions to the area of the window that requires</answer>
+        <answer>repainting.</answer>
+        <answer>8.12 What is the relationship between an event-listener interface and an event-</answer>
+    </question>
+    <question id="Q64">
+        adapter class ?
+        <answer>An event-listener interface deﬁnes the methods that must be implemented by an event handler for a particular event. An event</answer>
+        <answer>adapter provides a default implementation of an event-listener interface.</answer>
+    </question>
+    <question id="Q65">
+        8.13 How can a GUI component handle its own events ?
+        <answer>A GUI component can handle its own events, by implementing the corresponding event-listener interface and adding itself as its</answer>
+        <answer>own event listener.</answer>
+        <answer>8.14 What advantage do Java’s layout managers provide over traditional window-</answer>
+    </question>
+    <question id="Q66">
+        ing systems ?
+        <answer>Java uses layout managers to lay out components in a consistent manner, across all windowing platforms. Since layout man-</answer>
+        <answer>agers aren’t tied to absolute sizing and positioning, they are able to accomodate platform-speciﬁc differences among windowing</answer>
+        <answer>systems.</answer>
+    </question>
+    <question id="Q67">
+        8.15 What is the design pattern that Java uses for all Swing components ?
+        <answer>The design pattern used by Java for all Swing components is the Model View Controller (MVC) pattern.</answer>
+        <answer>Java Interview Questions 20 / 30</answer>
+        <answer>Chapter 9</answer>
+        <answer>JDBC</answer>
+    </question>
+    <question id="Q68">
+        9.1 What is JDBC ?
+        <answer>JDBC is an abstraction layer that allows users to choose between databases. JDBC enables developers to write database applica-</answer>
+        <answer>tions in Java, without having to concern themselves with the underlying details of a particular database.</answer>
+        <answer>9.2 Explain the role of Driver in JDBC.</answer>
+        <answer>The JDBC Driver provides vendor-speciﬁc implementations of the abstract classes provided by the JDBC API. Each driver</answer>
+        <answer>must provide implementations for the following classes of the java.sql package:Connection, Statement, PreparedStatement,</answer>
+        <answer>CallableStatement, ResultSet and Driver.</answer>
+    </question>
+    <question id="Q69">
+        9.3 What is the purpose Class.forName method ?
+        <answer>This method is used to method is used to load the driver that will establish a connection to the database.</answer>
+    </question>
+    <question id="Q70">
+        9.4 What is the advantage of PreparedStatement over Statement ?
+        <answer>PreparedStatements are precompiled and thus, their performance is much better. Also, PreparedStatement objects can be reused</answer>
+        <answer>with different input values to their queries.</answer>
+        <answer>9.5 What is the use of CallableStatement ? Name the method, which is used to</answer>
+        <answer>prepare a CallableStatement.</answer>
+        <answer>A CallableStatement is used to execute stored procedures. Stored procedures are stored and offered by a database. Stored</answer>
+        <answer>procedures may take input values from the user and may return a result. The usage of stored procedures is highly encouraged,</answer>
+        <answer>because it offers security and modularity.The method that prepares a CallableStatement is the following: CallableStament.</answer>
+        <answer>prepareCall();</answer>
+        <answer>Java Interview Questions 21 / 30</answer>
+    </question>
+    <question id="Q71">
+        9.6 What does Connection pooling mean ?
+        <answer>The interaction with a database can be costly, regarding the opening and closing of database connections. Especially, when the</answer>
+        <answer>number of database clients increases, this cost is very high and a large number of resources is consumed.A pool of database</answer>
+        <answer>connections is obtained at start up by the application server and is maintained in a pool. A request for a connection is served by a</answer>
+        <answer>connection residing in the pool. In the end of the connection, the request is returned to the pool and can be used to satisfy future</answer>
+        <answer>requests.</answer>
+        <answer>Java Interview Questions 22 / 30</answer>
+        <answer>Chapter 10</answer>
+        <answer>Remote Method Invocation (RMI)</answer>
+    </question>
+    <question id="Q72">
+        10.1 What is RMI ?
+        <answer>The Java Remote Method Invocation (Java RMI) is a Java API that performs the object-oriented equivalent of remote procedure</answer>
+        <answer>calls (RPC), with support for direct transfer of serialized Java classes and distributed garbage collection. Remote Method Invoca-</answer>
+        <answer>tion (RMI) can also be seen as the process of activating a method on a remotely running object. RMI offers location transparency</answer>
+        <answer>because a user feels that a method is executed on a locally running object. Check some RMI Tips here.</answer>
+    </question>
+    <question id="Q73">
+        10.2 What is the basic principle of RMI architecture ?
+        <answer>The RMI architecture is based on a very important principle which states that the deﬁnition of the behavior and the implemen-</answer>
+        <answer>tation of that behavior, are separate concepts. RMI allows the code that deﬁnes the behavior and the code that implements the</answer>
+        <answer>behavior to remain separate and to run on separate JVMs.</answer>
+    </question>
+    <question id="Q74">
+        10.3 What are the layers of RMI Architecture ?
+        <answer>The RMI architecture consists of the following layers:</answer>
+        <answer>•Stub and Skeleton layer : This layer lies just beneath the view of the developer. This layer is responsible for intercepting</answer>
+        <answer>method calls made by the client to the interface and redirect these calls to a remote RMI Service.</answer>
+        <answer>•Remote Reference Layer : The second layer of the RMI architecture deals with the interpretation of references made from</answer>
+        <answer>the client to the server’s remote objects. This layer interprets and manages references made from clients to the remote service</answer>
+        <answer>objects. The connection is a one-to-one (unicast) link.</answer>
+        <answer>•Transport layer : This layer is responsible for connecting the two JVM participating in the service. This layer is based on</answer>
+        <answer>TCP/IP connections between machines in a network. It provides basic connectivity, as well as some ﬁrewall penetration</answer>
+        <answer>strategies.</answer>
+    </question>
+    <question id="Q75">
+        10.4 What is the role of Remote Interface in RMI ?
+        <answer>The Remote interface serves to identify interfaces whose methods may be invoked from a non-local virtual machine. Any object</answer>
+        <answer>that is a remote object must directly or indirectly implement this interface. A class that implements a remote interface should</answer>
+        <answer>declare the remote interfaces being implemented, deﬁne the constructor for each remote object and provide an implementation</answer>
+        <answer>for each remote method in all remote interfaces.</answer>
+        <answer>Java Interview Questions 23 / 30</answer>
+    </question>
+    <question id="Q76">
+        10.5 What is the role of the java.rmi.Naming Class ?
+        <answer>The java.rmi.Naming class provides methods for storing and obtaining references to remote objects in the remote object registry.</answer>
+        <answer>Each method of the Naming class takes as one of its arguments a name that is a String in URL format.</answer>
+    </question>
+    <question id="Q77">
+        10.6 What is meant by binding in RMI ?
+        <answer>Binding is the process of associating or registering a name for a remote object, which can be used at a later time, in order to look</answer>
+        <answer>up that remote object. A remote object can be associated with a name using the bind or rebind methods of the Naming class.</answer>
+        <answer>10.7 What is the difference between using bind() and rebind() methods of Naming</answer>
+    </question>
+    <question id="Q78">
+        Class ?
+        <answer>The bind method bind is responsible for binding the speciﬁed name to a remote object, while the rebind method is responsible</answer>
+        <answer>for rebinding the speciﬁed name to a new remote object. In case a binding exists for that name, the binding is replaced.</answer>
+    </question>
+    <question id="Q79">
+        10.8 What are the steps involved to make work a RMI program ?
+        <answer>The following steps must be involved in order for a RMI program to work properly:</answer>
+        <answer>• Compilation of all source ﬁles.</answer>
+        <answer>• Generatation of the stubs using rmic.</answer>
+        <answer>• Start the rmiregistry.</answer>
+        <answer>• Start the RMIServer.</answer>
+        <answer>• Run the client program.</answer>
+    </question>
+    <question id="Q80">
+        10.9 What is the role of stub in RMI ?
+        <answer>A stub for a remote object acts as a client’s local representative or proxy for the remote object. The caller invokes a method on</answer>
+        <answer>the local stub, which is responsible for executing the method on the remote object. When a stub’s method is invoked, it undergoes</answer>
+        <answer>the following steps:</answer>
+        <answer>• It initiates a connection to the remote JVM containing the remote object.</answer>
+        <answer>• It marshals the parameters to the remote JVM.</answer>
+        <answer>• It waits for the result of the method invocation and execution.</answer>
+        <answer>• It unmarshals the return value or an exception if the method has not been successfully executed.</answer>
+        <answer>• It returns the value to the caller.</answer>
+    </question>
+    <question id="Q81">
+        10.10 What is DGC ? And how does it work ?
+        <answer>DGC stands for Distributed Garbage Collection. Remote Method Invocation (RMI) uses DGC for automatic garbage collection.</answer>
+        <answer>Since RMI involves remote object references across JVM’s, garbage collection can be quite difﬁcult. DGC uses a reference</answer>
+        <answer>counting algorithm to provide automatic memory management for remote objects.</answer>
+        <answer>Java Interview Questions 24 / 30</answer>
+    </question>
+    <question id="Q82">
+        10.11 What is the purpose of using RMISecurityManager in RMI ?
+        <answer>RMISecurityManager provides a security manager that can be used by RMI applications, which use downloaded code. The class</answer>
+        <answer>loader of RMI will not download any classes from remote locations, if the security manager has not been set.</answer>
+        <answer>10.12 Explain Marshalling and demarshalling.</answer>
+        <answer>When an application wants to pass its memory objects across a network to another host or persist it to storage, the in-memory</answer>
+        <answer>representation must be converted to a suitable format. This process is called marshalling and the revert operation is called</answer>
+        <answer>demarshalling.</answer>
+        <answer>10.13 Explain Serialization and Deserialization.</answer>
+        <answer>Java provides a mechanism, called object serialization where an object can be represented as a sequence of bytes and includes</answer>
+        <answer>the object’s data, as well as information about the object’s type, and the types of data stored in the object. Thus, serialization can</answer>
+        <answer>be seen as a way of ﬂattening objects, in order to be stored on disk, and later, read back and reconstituted. Deserialisation is the</answer>
+        <answer>reverse process of converting an object from its ﬂattened state to a live object.</answer>
+        <answer>Java Interview Questions 25 / 30</answer>
+        <answer>Chapter 11</answer>
+        <answer>Servlets</answer>
+    </question>
+    <question id="Q83">
+        11.1 What is a Servlet ?
+        <answer>The servlet is a Java programming language class used to process client requests and generate dynamic web content. Servlets are</answer>
+        <answer>mostly used to process or store data submitted by an HTML form, provide dynamic content and manage state information that</answer>
+        <answer>does not exist in the stateless HTTP protocol.</answer>
+        <answer>11.2 Explain the architechure of a Servlet.</answer>
+        <answer>The core abstraction that must be implemented by all servlets is the javax.servlet.Servlet interface. Each servlet must implement</answer>
+        <answer>it either directly or indirectly, either by extending javax.servlet.GenericServlet or javax.servlet.http.HTTPServlet. Finally, each</answer>
+        <answer>servlet is able to serve multiple requests in parallel using multithreading.</answer>
+    </question>
+    <question id="Q84">
+        11.3 What is the difference between an Applet and a Servlet ?
+        <answer>An Applet is a client side java program that runs within a Web browser on the client machine. On the other hand, a servlet is a</answer>
+        <answer>server side component that runs on the web server.An applet can use the user interface classes, while a servlet does not have a</answer>
+        <answer>user interface. Instead, a servlet waits for client’s HTTP requests and generates a response in every request.</answer>
+    </question>
+    <question id="Q85">
+        11.4 What is the difference between GenericServlet and HttpServlet ?
+        <answer>GenericServlet is a generalized and protocol-independent servlet that implements the Servlet and ServletConﬁg interfaces. Those</answer>
+        <answer>servlets extending the GenericServlet class shall override the service method. Finally, in order to develop an HTTP servlet for</answer>
+        <answer>use on the Web that serves requests using the HTTP protocol, your servlet must extend the HttpServlet instead. Check Servlet</answer>
+        <answer>examples here.</answer>
+        <answer>11.5 Explain the life cycle of a Servlet.</answer>
+        <answer>On every client’s request, the Servlet Engine loads the servlets and invokes its init methods, in order for the servlet to be</answer>
+        <answer>initialized. Then, the Servlet object handles all subsequent requests coming from that client, by invoking the service method for</answer>
+        <answer>each request separately. Finally, the servlet is removed by calling the server’s destroy method.</answer>
+        <answer>Java Interview Questions 26 / 30</answer>
+    </question>
+    <question id="Q86">
+        11.6 What is the difference between doGet() and doPost() ?
+        <answer>doGET : The GET method appends the name-value pairs on the request’s URL. Thus, there is a limit on the number of characters</answer>
+        <answer>and subsequently on the number of values that can be used in a client’s request. Furthermore, the values of the request are made</answer>
+        <answer>visible and thus, sensitive information must not be passed in that way.</answer>
+        <answer>doPOST : The POST method overcomes the limit imposed by the GET request, by sending the values of the request inside its</answer>
+        <answer>body. Also, there is no limitations on the number of values to be sent across. Finally, the sensitive information passed through a</answer>
+        <answer>POST request is not visible to an external client.</answer>
+    </question>
+    <question id="Q87">
+        11.7 What is meant by a Web Application ?
+        <answer>A Web application is a dynamic extension of a Web or application server. There are two types of web applications: presentation-</answer>
+        <answer>oriented and service-oriented. A presentation-oriented Web application generates interactive web pages, which contain various</answer>
+        <answer>types of markup language and dynamic content in response to requests. On the other hand, a service-oriented web application</answer>
+        <answer>implements the endpoint of a web service. In general, a Web application can be seen as a collection of servlets installed under a</answer>
+        <answer>speciﬁc subset of the server’s URL namespace.</answer>
+    </question>
+    <question id="Q88">
+        11.8 What is a Server Side Include (SSI) ?
+        <answer>Server Side Includes (SSI) is a simple interpreted server-side scripting language, used almost exclusively for the Web, and is</answer>
+        <answer>embedded with a servlet tag. The most frequent use of SSI is to include the contents of one or more ﬁles into a Web page on a</answer>
+        <answer>Web server. When a Web page is accessed by a browser, the Web server replaces the servlet tag in that Web page with the hyper</answer>
+        <answer>text generated by the corresponding servlet.</answer>
+    </question>
+    <question id="Q89">
+        11.9 What is Servlet Chaining ?
+        <answer>Servlet Chaining is the method where the output of one servlet is sent to a second servlet. The output of the second servlet can</answer>
+        <answer>be sent to a third servlet, and so on. The last servlet in the chain is responsible for sending the response to the client.</answer>
+        <answer>11.10 How do you ﬁnd out what client machine is making a request to your servlet</answer>
+    </question>
+    <question id="Q90">
+        ?
+        <answer>The ServletRequest class has functions for ﬁnding out the IP address or host name of the client machine. getRemoteAddr() gets</answer>
+        <answer>the IP address of the client machine and getRemoteHost() gets the host name of the client machine. See example here.</answer>
+    </question>
+    <question id="Q91">
+        11.11 What is the structure of the HTTP response ?
+        <answer>The HTTP response consists of three parts:</answer>
+        <answer>•Status Code : describes the status of the response. It can be used to check if the request has been successfully completed. In</answer>
+        <answer>case the request failed, the status code can be used to ﬁnd out the reason behind the failure. If your servlet does not return a</answer>
+        <answer>status code, the success status code, HttpServletResponse.SC_OK, is returned by default.</answer>
+        <answer>•HTTP Headers : they contain more information about the response. For example, the headers may specify the date/time after</answer>
+        <answer>which the response is considered stale, or the form of encoding used to safely transfer the entity to the user. See how to retrieve</answer>
+        <answer>headers in Servlet here.</answer>
+        <answer>•Body : it contains the content of the response. The body may contain HTML code, an image, etc. The body consists of the data</answer>
+        <answer>bytes transmitted in an HTTP transaction message immediately following the headers.</answer>
+        <answer>Java Interview Questions 27 / 30</answer>
+    </question>
+    <question id="Q92">
+        11.12 What is a cookie ? What is the difference between session and cookie ?
+        <answer>A cookie is a bit of information that the Web server sends to the browser. The browser stores the cookies for each Web server</answer>
+        <answer>in a local ﬁle. In a future request, the browser, along with the request, sends all stored cookies for that speciﬁc Web server.The</answer>
+        <answer>differences between session and a cookie are the following:</answer>
+        <answer>• The session should work, regardless of the settings on the client browser. The client may have chosen to disable cookies.</answer>
+        <answer>However, the sessions still work, as the client has no ability to disable them in the server side.</answer>
+        <answer>• The session and cookies also differ in the amount of information the can store. The HTTP session is capable of storing any</answer>
+        <answer>Java object, while a cookie can only store String objects.</answer>
+    </question>
+    <question id="Q93">
+        11.13 Which protocol will be used by browser and servlet to communicate ?
+        <answer>The browser communicates with a servlet by using the HTTP protocol.</answer>
+    </question>
+    <question id="Q94">
+        11.14 What is HTTP Tunneling ?
+        <answer>HTTP Tunneling is a technique by which, communications performed using various network protocols are encapsulated using</answer>
+        <answer>the HTTP or HTTPS protocols. The HTTP protocol therefore acts as a wrapper for a channel that the network protocol being</answer>
+        <answer>tunneled uses to communicate. The masking of other protocol requests as HTTP requests is HTTP Tunneling.</answer>
+    </question>
+    <question id="Q95">
+        11.15 What’s the difference between sendRedirect and forward methods ?
+        <answer>The sendRedirect method creates a new request, while the forward method just forwards a request to a new target. The previous</answer>
+        <answer>request scope objects are not available after a redirect, because it results in a new request. On the other hand, the previous request</answer>
+        <answer>scope objects are available after forwarding. FInally, in general, the sendRedirect method is considered to be slower compare to</answer>
+        <answer>the forward method.</answer>
+    </question>
+    <question id="Q96">
+        11.16 What is URL Encoding and URL Decoding ?
+        <answer>The URL encoding procedure is responsible for replacing all the spaces and every other extra special character of a URL, into</answer>
+        <answer>their corresponding Hex representation. In correspondence, URL decoding is the exact opposite procedure.</answer>
+        <answer>Java Interview Questions 28 / 30</answer>
+        <answer>Chapter 12</answer>
+        <answer>JSP</answer>
+    </question>
+    <question id="Q97">
+        12.1 What is a JSP Page ?
+        <answer>A Java Server Page (JSP) is a text document that contains two types of text: static data and JSP elements. Static data can be</answer>
+        <answer>expressed in any text-based format, such as HTML or XML. JSP is a technology that mixes static content with dynamically-</answer>
+        <answer>generated content. See JSP example here.</answer>
+    </question>
+    <question id="Q98">
+        12.2 How are the JSP requests handled ?
+        <answer>On the arrival of a JSP request, the browser ﬁrst requests a page with a .jsp extension. Then, the Web server reads the request and</answer>
+        <answer>using the JSP compiler, the Web server converts the JSP page into a servlet class. Notice that the JSP ﬁle is compiled only on</answer>
+        <answer>the ﬁrst request of the page, or if the JSP ﬁle has changed.The generated servlet class is invoked, in order to handle the browser’s</answer>
+        <answer>request. Once the execution of the request is over, the servlet sends a response back to the client. See how to get Request</answer>
+        <answer>parameters in a JSP.</answer>
+    </question>
+    <question id="Q99">
+        12.3 What are the advantages of JSP ?
+        <answer>The advantages of using the JSP technology are shown below:</answer>
+        <answer>• JSP pages are dynamically compiled into servlets and thus, the developers can easily make updates to presentation code.</answer>
+        <answer>• JSP pages can be pre-compiled.</answer>
+        <answer>• JSP pages can be easily combined to static templates, including HTML or XML fragments, with code that generates dynamic</answer>
+        <answer>content.</answer>
+        <answer>• Developers can offer customized JSP tag libraries that page authors access using an XML-like syntax.</answer>
+        <answer>• Developers can make logic changes at the component level, without editing the individual pages that use the application’s logic.</answer>
+        <answer>12.4 What are Directives ? What are the different types of Directives available in</answer>
+    </question>
+    <question id="Q100">
+        JSP ?
+        <answer>Directives are instructions that are processed by the JSP engine, when the page is compiled to a servlet. Directives are used to</answer>
+        <answer>set page-level instructions, insert data from external ﬁles, and specify custom tag libraries. Directives are deﬁned between &lt; %@</answer>
+        <answer>and % &gt; . The different types of directives are shown below:</answer>
+        <answer>Java Interview Questions 29 / 30</answer>
+        <answer>•Include directive : it is used to include a ﬁle and merges the content of the ﬁle with the current page.</answer>
+        <answer>•Page directive : it is used to deﬁne speciﬁc attributes in the JSP page, like error page and buffer.</answer>
+        <answer>•Taglib : it is used to declare a custom tag library which is used in the page.</answer>
+    </question>
+    <question id="Q101">
+        12.5 What are JSP actions ?
+        <answer>JSP actions use constructs in XML syntax to control the behavior of the servlet engine. JSP actions are executed when a JSP</answer>
+        <answer>page is requested. They can be dynamically inserted into a ﬁle, re-use JavaBeans components, forward the user to another page,</answer>
+        <answer>or generate HTML for the Java plugin.Some of the available actions are listed below:</answer>
+        <answer>•jsp:include - includes a ﬁle, when the JSP page is requested.</answer>
+        <answer>•jsp:useBean - ﬁnds or instantiates a JavaBean.</answer>
+        <answer>•jsp:setProperty - sets the property of a JavaBean.</answer>
+        <answer>•jsp:getProperty - gets the property of a JavaBean.</answer>
+        <answer>•jsp:forward - forwards the requester to a new page.</answer>
+        <answer>•jsp:plugin - generates browser-speciﬁc code.</answer>
+    </question>
+    <question id="Q102">
+        12.6 What are Scriptlets ?
+        <answer>In Java Server Pages (JSP) technology, a scriptlet is a piece of Java-code embedded in a JSP page. The scriptlet is everything</answer>
+        <answer>inside the tags. Between these tags, a user can add any valid scriplet.</answer>
+    </question>
+    <question id="Q103">
+        12.7 What are Decalarations ?
+        <answer>Declarations are similar to variable declarations in Java. Declarations are used to declare variables for subsequent use in expres-</answer>
+        <answer>sions or scriptlets. To add a declaration, you must use the sequences to enclose your declarations.</answer>
+    </question>
+    <question id="Q104">
+        12.8 What are Expressions ?
+        <answer>A JSP expression is used to insert the value of a scripting language expression, converted into a string, into the data stream</answer>
+        <answer>returned to the client, by the web server. Expressions are deﬁned between &lt;% =and %&gt; tags.</answer>
+    </question>
+    <question id="Q105">
+        12.9 What is meant by implicit objects and what are they ?
+        <answer>JSP implicit objects are those Java objects that the JSP Container makes available to developers in each page. A developer can</answer>
+        <answer>call them directly, without being explicitly declared. JSP Implicit Objects are also called pre-deﬁned variables.The following</answer>
+        <answer>objects are considered implicit in a JSP page:</answer>
+        <answer>•application</answer>
+        <answer>•page</answer>
+        <answer>•request</answer>
+        <answer>•response</answer>
+        <answer>Java Interview Questions 30 / 30</answer>
+        <answer>•session</answer>
+        <answer>•exception</answer>
+        <answer>•out</answer>
+        <answer>•config</answer>
+        <answer>•pageContext</answer>
+    </question>
+</root>

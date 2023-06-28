@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<questions>
+	<question>
+		<text>qwerty</text>
+		<answer>qwert</answer>
+	</question>
+	<question>
+		<text>sdgh</text>
+		<answer>dfgh</answer>
+	</question>
+</questions>

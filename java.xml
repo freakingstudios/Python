@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<questions>
+	<question>
+		<text>What is Java? Explain its features and advantages</text>
+		<answer>Java is a high-level, object-oriented programming language developed by Sun Microsystems (now owned by Oracle). It is platform-independent and designed to have a simple and secure execution environment. Some key features of Java include automatic memory management (garbage collection), platform independence through the Java Virtual Machine (JVM), support for multithreading, and a vast standard library. Its advantages include portability, scalability, robustness, and widespread community support.</answer>
+	</question>
+	<question>
+		<text>What is the difference between JDK, JRE, and JVM?</text>
+		<answer>JDK (Java Development Kit): It is a software development kit that provides the tools necessary to develop, debug, and compile Java applications. It includes the JRE, Java compiler, debugger, and other development utilities.
+JRE (Java Runtime Environment): It is a runtime environment that provides the necessary libraries, Java Virtual Machine (JVM), and other components to run Java applications. It does not include development tools.
+JVM (Java Virtual Machine): It is a virtual machine that executes Java bytecode. It provides an abstraction layer between the Java application and the underlying hardware and operating system. JVM is responsible for memory management, garbage collection, and bytecode interpretation.</answer>
+	</question>
+	<question>
+		<text>What are the main principles of object-oriented programming (OOP)?</text>
+		<answer>The main principles of OOP are:
+
+Encapsulation: It is the process of bundling data and methods into a single unit (object) and hiding the internal details from the outside world.
+Inheritance: It allows the creation of new classes (derived classes) based on existing classes (base or parent classes), inheriting their attributes and behaviors.
+Polymorphism: It refers to the ability of an object to take on multiple forms. It allows methods to be overridden in subclasses and objects of different classes to be treated as objects of a common superclass.
+Abstraction: It is the process of simplifying complex systems by breaking them down into smaller, more manageable units. It involves creating abstract classes and interfaces to define common behaviors and attributes.
+Association: It represents a relationship between two or more objects. It can be one-to-one, one-to-many, or many-to-many.
+Composition: It is a special form of association where one class is composed of other classes. The composed classes cannot exist independently of the main class.
+Aggregation: It is another form of association where one class is composed of other classes, but the composed classes can exist independently.</answer>
+	</question>
+	<question>
+		<text>What is the difference between ArrayList and LinkedList?</text>
+		<answer>ArrayList is implemented as a resizable array and provides fast access to elements, while LinkedList is implemented as a doubly-linked list and provides efficient insertion and deletion operations.</answer>
+	</question>
+	<question>
+		<text>What is the difference between equals() and == in Java?</text>
+		<answer>The equals() method is used to compare the content of two objects for equality, while == is used to compare the memory addresses of two objects.</answer>
+	</question>
+	<question>
+		<text>What is the difference between final, finally, and finalize in Java?</text>
+		<answer>final is used to declare a constant variable, a method that cannot be overridden, or a class that cannot be inherited.
+finally is used in exception handling to specify a block of code that will be executed regardless of whether an exception is thrown or not.
+finalize is a method called by the garbage collector before reclaiming the memory occupied by an object.</answer>
+	</question>
+	<question>
+		<text>What is a constructor? How is it different from a method?</text>
+		<answer>
+A constructor is a special method used to initialize objects. It has the same name as the class and does not have a return type. It is automatically called when an object is created. Unlike a method, constructors cannot be called explicitly and are not inherited.</answer>
+	</question>
+	<question>
+		<text>What is the static keyword in Java?</text>
+		<answer>The static keyword is used to define class-level variables and methods that can be accessed without creating an instance of the class. Static members are associated with the class rather than with specific instances.</answer>
+	</question>
+	<question>
+		<text>What is the difference between method overloading and method overriding?</text>
+		<answer>Method overloading is when multiple methods in the same class have the same name but different parameters. Method overriding occurs when a subclass provides its own implementation of a method defined in its superclass.</answer>
+	</question>
+	<question>
+		<text>What are access modifiers in Java?</text>
+		<answer>Access modifiers determine the accessibility or visibility of classes, methods, and variables. Java has four access modifiers: public, protected, private, and the default (no modifier). They control the level of access from different parts of the program.</answer>
+	</question>
+	<question>
+		<text>What is the difference between an abstract class and an interface?</text>
+		<answer>An abstract class can have both concrete methods and abstract methods, while an interface can only have abstract methods. A class can implement multiple interfaces, but it can only extend one abstract class.</answer>
+	</question>
+	<question>
+		<text>What is the this keyword in Java?</text>
+		<answer>The this keyword is a reference to the current object within a class. It can be used to access instance variables and methods or invoke another constructor in the same class.</answer>
+	</question>
+	<question>
+		<text>What is method overriding?</text>
+		<answer>Method overriding occurs when a subclass provides its own implementation of a method that is already defined in its superclass. It is achieved by using the same method signature in the subclass.</answer>
+	</question>
+</questions>
